@@ -815,7 +815,7 @@
                 
                 // Show correct answer and explanation
                 const correctOptionText = correctOption.textContent;
-                feedbackText.innerHTML = `❌ Incorrect. The correct answer is: <strong style="color: #155724;">✓ ${correctOptionText}</strong><br><br><span style="color: #155724;">${feedbackMessages[correctAnswer].correct.replace('✅ Correct!', '✓ Correct!')}</span>`;
+                feedbackText.innerHTML = ` The correct answer is: <strong style="color: #155724;">✓ ${correctOptionText}</strong><br><br><span style="color: #155724;">${feedbackMessages[correctAnswer].correct.replace('✅ Correct!', '✓ Correct!')}</span>`;
                 
                 // Remove from answered questions if previously correct
                 if (answeredQuestions.has(scenario)) {
