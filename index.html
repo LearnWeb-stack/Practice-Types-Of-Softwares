@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Software Type Identification Exercise</title>
+    <title>Software Type Identification Exercise - 20 Questions</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            max-width: 1000px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -50,7 +50,7 @@
         
         .software-types {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 20px;
             margin-bottom: 20px;
         }
@@ -59,7 +59,7 @@
             background: white;
             border: 2px solid #e0e6ff;
             border-radius: 10px;
-            padding: 15px;
+            padding: 20px;
         }
         
         .software-type h3 {
@@ -73,6 +73,25 @@
             font-size: 0.9em;
             color: #666;
             line-height: 1.4;
+        }
+        
+        .subcategory {
+            background: #f0f4ff;
+            border-radius: 6px;
+            padding: 10px;
+            margin: 8px 0;
+            border-left: 3px solid #667eea;
+        }
+        
+        .subcategory-title {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 4px;
+        }
+        
+        .examples {
+            font-size: 0.85em;
+            color: #555;
         }
         
         .exercise-section {
@@ -102,7 +121,7 @@
         
         .options {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 10px;
             margin-bottom: 15px;
         }
@@ -111,11 +130,13 @@
             background: #f8f9ff;
             border: 2px solid #e0e6ff;
             border-radius: 8px;
-            padding: 12px;
+            padding: 10px;
             cursor: pointer;
             transition: all 0.3s ease;
             text-align: center;
             font-weight: 500;
+            font-size: 0.9em;
+            line-height: 1.3;
         }
         
         .option:hover {
@@ -199,49 +220,121 @@
         </div>
         
         <div class="reference-section">
-            <h2>📚 Quick Reference: Three Main Software Types</h2>
+            <h2>📚 Reference Guide: Software Types & Subcategories</h2>
             <div class="software-types">
                 <div class="software-type">
                     <h3>🔧 System Software</h3>
                     <div class="subcategories">
-                        <strong>Purpose:</strong> Controls hardware and provides platform for other software<br>
-                        <strong>Examples:</strong>
-                        <ul>
-                            <li><strong>Operating Systems:</strong> Windows, macOS, Linux, Android, iOS</li>
-                            <li><strong>Device Drivers:</strong> Graphics drivers, printer drivers</li>
-                            <li><strong>System Utilities:</strong> Antivirus, disk cleanup, system monitors</li>
-                            <li><strong>Firmware:</strong> BIOS/UEFI, router firmware</li>
-                        </ul>
+                        <strong>Purpose:</strong> Controls hardware and provides platform for other software<br><br>
+                        
+                        <div class="subcategory">
+                            <div class="subcategory-title">Operating Systems</div>
+                            <div class="examples">Windows 11, macOS Sonoma, Ubuntu Linux, Android, iOS, Chrome OS</div>
+                        </div>
+                        
+                        <div class="subcategory">
+                            <div class="subcategory-title">Device Drivers</div>
+                            <div class="examples">Graphics card drivers (NVIDIA, AMD), printer drivers, audio drivers, network adapters</div>
+                        </div>
+                        
+                        <div class="subcategory">
+                            <div class="subcategory-title">System Utilities</div>
+                            <div class="examples">Antivirus (Norton, McAfee), disk cleanup tools, registry cleaners, system monitors, backup software</div>
+                        </div>
+                        
+                        <div class="subcategory">
+                            <div class="subcategory-title">Firmware</div>
+                            <div class="examples">BIOS/UEFI, router firmware, smartphone bootloaders, embedded system software</div>
+                        </div>
+                        
+                        <div class="subcategory">
+                            <div class="subcategory-title">System Libraries</div>
+                            <div class="examples">DirectX, OpenGL, system APIs, runtime environments (.NET Framework, Java Runtime)</div>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="software-type">
                     <h3>📱 Application Software</h3>
                     <div class="subcategories">
-                        <strong>Purpose:</strong> Performs specific tasks for end users<br>
-                        <strong>Examples:</strong>
-                        <ul>
-                            <li><strong>Productivity:</strong> Microsoft Office, Google Workspace</li>
-                            <li><strong>Creative:</strong> Photoshop, Premiere Pro, Blender</li>
-                            <li><strong>Communication:</strong> Zoom, WhatsApp, Gmail</li>
-                            <li><strong>Entertainment:</strong> Netflix, Spotify, Steam games</li>
-                            <li><strong>Business:</strong> Salesforce, QuickBooks, Slack</li>
-                        </ul>
+                        <strong>Purpose:</strong> Performs specific tasks for end users<br><br>
+                        
+                        <div class="subcategory">
+                            <div class="subcategory-title">Productivity Software</div>
+                            <div class="examples">Microsoft Office, Google Workspace, LibreOffice, Notion, Evernote</div>
+                        </div>
+                        
+                        <div class="subcategory">
+                            <div class="subcategory-title">Creative & Multimedia</div>
+                            <div class="examples">Adobe Photoshop, Premiere Pro, Blender, Canva, GIMP, Audacity</div>
+                        </div>
+                        
+                        <div class="subcategory">
+                            <div class="subcategory-title">Communication</div>
+                            <div class="examples">Zoom, Microsoft Teams, WhatsApp, Discord, Slack, Gmail, Outlook</div>
+                        </div>
+                        
+                        <div class="subcategory">
+                            <div class="subcategory-title">Entertainment</div>
+                            <div class="examples">Netflix, Spotify, Steam, Epic Games, VLC Media Player, YouTube</div>
+                        </div>
+                        
+                        <div class="subcategory">
+                            <div class="subcategory-title">Business Applications</div>
+                            <div class="examples">Salesforce, QuickBooks, SAP, Oracle ERP, Shopify, HubSpot</div>
+                        </div>
+                        
+                        <div class="subcategory">
+                            <div class="subcategory-title">Educational</div>
+                            <div class="examples">Khan Academy, Duolingo, Coursera, Blackboard, Moodle</div>
+                        </div>
+                        
+                        <div class="subcategory">
+                            <div class="subcategory-title">Web Browsers</div>
+                            <div class="examples">Chrome, Firefox, Safari, Edge, Opera</div>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="software-type">
                     <h3>⚙️ Programming Software</h3>
                     <div class="subcategories">
-                        <strong>Purpose:</strong> Tools for creating, debugging, and maintaining other software<br>
-                        <strong>Examples:</strong>
-                        <ul>
-                            <li><strong>IDEs:</strong> Visual Studio, Eclipse, VS Code</li>
-                            <li><strong>Text Editors:</strong> Sublime Text, Atom, Notepad++</li>
-                            <li><strong>Compilers/Interpreters:</strong> GCC, Python interpreter</li>
-                            <li><strong>Version Control:</strong> Git, GitHub, GitLab</li>
-                            <li><strong>Databases:</strong> MySQL, PostgreSQL, MongoDB</li>
-                        </ul>
+                        <strong>Purpose:</strong> Tools for creating, debugging, and maintaining other software<br><br>
+                        
+                        <div class="subcategory">
+                            <div class="subcategory-title">Integrated Development Environments (IDEs)</div>
+                            <div class="examples">Visual Studio, IntelliJ IDEA, Eclipse, Xcode, Android Studio</div>
+                        </div>
+                        
+                        <div class="subcategory">
+                            <div class="subcategory-title">Code Editors</div>
+                            <div class="examples">VS Code, Sublime Text, Atom, Notepad++, Vim, Emacs</div>
+                        </div>
+                        
+                        <div class="subcategory">
+                            <div class="subcategory-title">Compilers & Interpreters</div>
+                            <div class="examples">GCC, Clang, Python interpreter, Java JVM, TypeScript compiler</div>
+                        </div>
+                        
+                        <div class="subcategory">
+                            <div class="subcategory-title">Version Control Systems</div>
+                            <div class="examples">Git, GitHub, GitLab, Bitbucket, Subversion (SVN)</div>
+                        </div>
+                        
+                        <div class="subcategory">
+                            <div class="subcategory-title">Database Management</div>
+                            <div class="examples">MySQL Workbench, pgAdmin, MongoDB Compass, SQLite Browser</div>
+                        </div>
+                        
+                        <div class="subcategory">
+                            <div class="subcategory-title">Testing & Debugging Tools</div>
+                            <div class="examples">Jest, Selenium, Postman, Chrome DevTools, Wireshark</div>
+                        </div>
+                        
+                        <div class="subcategory">
+                            <div class="subcategory-title">Build & Deployment Tools</div>
+                            <div class="examples">Docker, Jenkins, Webpack, Maven, npm, Gradle</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -251,112 +344,340 @@
             <h2>🎯 Practice Scenarios</h2>
             <p><strong>Instructions:</strong> Read each scenario and select the correct software type. Click on your answer to see if you're correct!</p>
             
-            <div class="scenario" data-answer="system">
+            <!-- Q1 -->
+            <div class="scenario" data-answer="operating-system">
                 <div class="scenario-text">
-                    <strong>Scenario 1:</strong> Sarah just bought a new computer and needs to install something that will manage her computer's memory, handle file storage, and provide a desktop interface where she can run other programs.
+                    <strong>Q1:</strong><br>
+                    Sarah's computer won't start properly. The technician explains that the software responsible for starting up the computer, managing memory, handling file operations, and providing the desktop interface needs to be reinstalled.
                 </div>
                 <div class="options">
-                    <div class="option" data-type="system">System Software</div>
-                    <div class="option" data-type="application">Application Software</div>
-                    <div class="option" data-type="programming">Programming Software</div>
+                    <div class="option" data-type="operating-system">System Software<br><small>(Operating System)</small></div>
+                    <div class="option" data-type="device-driver">System Software<br><small>(Device Driver)</small></div>
+                    <div class="option" data-type="productivity">Application Software<br><small>(Productivity)</small></div>
+                    <div class="option" data-type="ide">Programming Software<br><small>(IDE)</small></div>
                 </div>
                 <div class="feedback">
                     <span class="feedback-text"></span>
                 </div>
             </div>
             
-            <div class="scenario" data-answer="application">
+            <!-- Q2 -->
+            <div class="scenario" data-answer="creative-multimedia">
                 <div class="scenario-text">
-                    <strong>Scenario 2:</strong> Mark is a graphic designer who needs to edit photos, create digital artwork, and design logos for his clients. He's looking for software that will help him manipulate images and create visual content.
+                    <strong>Q2:</strong><br>
+                    Mark runs a photography business and needs to edit wedding photos, remove backgrounds, adjust lighting, create photo albums, and add watermarks to his images before delivering them to clients.
                 </div>
                 <div class="options">
-                    <div class="option" data-type="system">System Software</div>
-                    <div class="option" data-type="application">Application Software</div>
-                    <div class="option" data-type="programming">Programming Software</div>
+                    <div class="option" data-type="system-utilities">System Software<br><small>(System Utilities)</small></div>
+                    <div class="option" data-type="creative-multimedia">Application Software<br><small>(Creative & Multimedia)</small></div>
+                    <div class="option" data-type="productivity">Application Software<br><small>(Productivity)</small></div>
+                    <div class="option" data-type="code-editor">Programming Software<br><small>(Code Editor)</small></div>
                 </div>
                 <div class="feedback">
                     <span class="feedback-text"></span>
                 </div>
             </div>
             
-            <div class="scenario" data-answer="programming">
+            <!-- Q3 -->
+            <div class="scenario" data-answer="ide">
                 <div class="scenario-text">
-                    <strong>Scenario 3:</strong> Lisa is a software developer working on a mobile app. She needs tools that will help her write code, debug errors, manage different versions of her project, and compile her code into a working application.
+                    <strong>Q3:</strong><br>
+                    Lisa is developing a mobile app for her startup. She needs tools that provide syntax highlighting, auto-completion, error detection, the ability to test her code, manage different versions of her project, and convert her source code into an executable app.
                 </div>
                 <div class="options">
-                    <div class="option" data-type="system">System Software</div>
-                    <div class="option" data-type="application">Application Software</div>
-                    <div class="option" data-type="programming">Programming Software</div>
+                    <div class="option" data-type="operating-system">System Software<br><small>(Operating System)</small></div>
+                    <div class="option" data-type="business">Application Software<br><small>(Business)</small></div>
+                    <div class="option" data-type="ide">Programming Software<br><small>(IDE)</small></div>
+                    <div class="option" data-type="code-editor">Programming Software<br><small>(Code Editor)</small></div>
                 </div>
                 <div class="feedback">
                     <span class="feedback-text"></span>
                 </div>
             </div>
             
-            <div class="scenario" data-answer="system">
+            <!-- Q4 -->
+            <div class="scenario" data-answer="device-driver">
                 <div class="scenario-text">
-                    <strong>Scenario 4:</strong> Tom's computer isn't recognizing his new wireless mouse. He needs to download and install something that will allow his operating system to communicate properly with this hardware device.
+                    <strong>Q4:</strong><br>
+                    Tom bought a new graphics card for gaming, but his computer doesn't recognize it. He needs to download specific software that will allow his operating system to communicate with and control this new hardware component.
                 </div>
                 <div class="options">
-                    <div class="option" data-type="system">System Software</div>
-                    <div class="option" data-type="application">Application Software</div>
-                    <div class="option" data-type="programming">Programming Software</div>
+                    <div class="option" data-type="device-driver">System Software<br><small>(Device Driver)</small></div>
+                    <div class="option" data-type="system-utilities">System Software<br><small>(System Utilities)</small></div>
+                    <div class="option" data-type="entertainment">Application Software<br><small>(Entertainment)</small></div>
+                    <div class="option" data-type="testing-debugging">Programming Software<br><small>(Testing & Debugging)</small></div>
                 </div>
                 <div class="feedback">
                     <span class="feedback-text"></span>
                 </div>
             </div>
             
-            <div class="scenario" data-answer="application">
+            <!-- Q5 -->
+            <div class="scenario" data-answer="business">
                 <div class="scenario-text">
-                    <strong>Scenario 5:</strong> Jenny runs a small business and needs to create invoices, track expenses, manage customer information, and generate financial reports. She's looking for software to help with these business tasks.
+                    <strong>Q5:</strong><br>
+                    Jenny's small bakery needs to create professional invoices, track daily sales, manage customer orders, calculate taxes, and generate monthly financial reports for her accountant.
                 </div>
                 <div class="options">
-                    <div class="option" data-type="system">System Software</div>
-                    <div class="option" data-type="application">Application Software</div>
-                    <div class="option" data-type="programming">Programming Software</div>
+                    <div class="option" data-type="firmware">System Software<br><small>(Firmware)</small></div>
+                    <div class="option" data-type="business">Application Software<br><small>(Business)</small></div>
+                    <div class="option" data-type="productivity">Application Software<br><small>(Productivity)</small></div>
+                    <div class="option" data-type="database">Programming Software<br><small>(Database Management)</small></div>
                 </div>
                 <div class="feedback">
                     <span class="feedback-text"></span>
                 </div>
             </div>
             
-            <div class="scenario" data-answer="programming">
+            <!-- Q6 -->
+            <div class="scenario" data-answer="code-editor">
                 <div class="scenario-text">
-                    <strong>Scenario 6:</strong> Alex is learning to code and needs a tool where he can write Python scripts, see syntax highlighting, run his code to test it, and get help debugging when something goes wrong.
+                    <strong>Q6:</strong><br>
+                    Alex is learning Python programming. He needs software that will highlight his code in different colors, show him syntax errors as he types, allow him to run his programs to test them, and help him find and fix bugs in his code.
                 </div>
                 <div class="options">
-                    <div class="option" data-type="system">System Software</div>
-                    <div class="option" data-type="application">Application Software</div>
-                    <div class="option" data-type="programming">Programming Software</div>
+                    <div class="option" data-type="system-libraries">System Software<br><small>(System Libraries)</small></div>
+                    <div class="option" data-type="educational">Application Software<br><small>(Educational)</small></div>
+                    <div class="option" data-type="code-editor">Programming Software<br><small>(Code Editor)</small></div>
+                    <div class="option" data-type="compiler">Programming Software<br><small>(Compiler/Interpreter)</small></div>
                 </div>
                 <div class="feedback">
                     <span class="feedback-text"></span>
                 </div>
             </div>
             
-            <div class="scenario" data-answer="application">
+            <!-- Q7 -->
+            <div class="scenario" data-answer="communication">
                 <div class="scenario-text">
-                    <strong>Scenario 7:</strong> Maria wants to video chat with her family overseas, share documents with her study group, and collaborate on a presentation in real-time with her classmates.
+                    <strong>Q7:</strong><br>
+                    Maria's university requires her to attend virtual lectures, collaborate on group projects with classmates from different countries, share documents in real-time, and participate in online discussions with her study group.
                 </div>
                 <div class="options">
-                    <div class="option" data-type="system">System Software</div>
-                    <div class="option" data-type="application">Application Software</div>
-                    <div class="option" data-type="programming">Programming Software</div>
+                    <div class="option" data-type="operating-system">System Software<br><small>(Operating System)</small></div>
+                    <div class="option" data-type="communication">Application Software<br><small>(Communication)</small></div>
+                    <div class="option" data-type="educational">Application Software<br><small>(Educational)</small></div>
+                    <div class="option" data-type="version-control">Programming Software<br><small>(Version Control)</small></div>
                 </div>
                 <div class="feedback">
                     <span class="feedback-text"></span>
                 </div>
             </div>
             
-            <div class="scenario" data-answer="system">
+            <!-- Q8 -->
+            <div class="scenario" data-answer="system-utilities">
                 <div class="scenario-text">
-                    <strong>Scenario 8:</strong> David's computer is running slowly, so he wants to clean up temporary files, defragment his hard drive, monitor system performance, and scan for malware to optimize his computer's performance.
+                    <strong>Q8:</strong><br>
+                    David's computer is running slowly and experiencing crashes. He needs software that can clean temporary files, optimize memory usage, scan for malicious programs, monitor system performance, and defragment his hard drive to improve overall system efficiency.
                 </div>
                 <div class="options">
-                    <div class="option" data-type="system">System Software</div>
-                    <div class="option" data-type="application">Application Software</div>
-                    <div class="option" data-type="programming">Programming Software</div>
+                    <div class="option" data-type="system-utilities">System Software<br><small>(System Utilities)</small></div>
+                    <div class="option" data-type="operating-system">System Software<br><small>(Operating System)</small></div>
+                    <div class="option" data-type="productivity">Application Software<br><small>(Productivity)</small></div>
+                    <div class="option" data-type="testing-debugging">Programming Software<br><small>(Testing & Debugging)</small></div>
+                </div>
+                <div class="feedback">
+                    <span class="feedback-text"></span>
+                </div>
+            </div>
+
+            <!-- Q9 -->
+            <div class="scenario" data-answer="version-control">
+                <div class="scenario-text">
+                    <strong>Q9:</strong><br>
+                    Rachel's development team needs to manage their project where multiple programmers are working on the same codebase. They need tools to track changes, merge different versions of code, resolve conflicts when two people edit the same file, and maintain a history of all modifications.
+                </div>
+                <div class="options">
+                    <div class="option" data-type="system-libraries">System Software<br><small>(System Libraries)</small></div>
+                    <div class="option" data-type="business">Application Software<br><small>(Business)</small></div>
+                    <div class="option" data-type="version-control">Programming Software<br><small>(Version Control)</small></div>
+                    <div class="option" data-type="database">Programming Software<br><small>(Database Management)</small></div>
+                </div>
+                <div class="feedback">
+                    <span class="feedback-text"></span>
+                </div>
+            </div>
+
+            <!-- Q10 -->
+            <div class="scenario" data-answer="creative-multimedia">
+                <div class="scenario-text">
+                    <strong>Q10:</strong><br>
+                    Carlos is a content creator who needs to edit YouTube videos, add transitions and effects, synchronize audio tracks, create thumbnails, and export his finished videos in different formats for various social media platforms.
+                </div>
+                <div class="options">
+                    <div class="option" data-type="device-driver">System Software<br><small>(Device Driver)</small></div>
+                    <div class="option" data-type="creative-multimedia">Application Software<br><small>(Creative & Multimedia)</small></div>
+                    <div class="option" data-type="entertainment">Application Software<br><small>(Entertainment)</small></div>
+                    <div class="option" data-type="build-deployment">Programming Software<br><small>(Build & Deployment)</small></div>
+                </div>
+                <div class="feedback">
+                    <span class="feedback-text"></span>
+                </div>
+            </div>
+
+            <!-- Q11 -->
+            <div class="scenario" data-answer="firmware">
+                <div class="scenario-text">
+                    <strong>Q11:</strong><br>
+                    Emma's router stopped working after a power outage. The technician says she needs to update the low-level software stored permanently in the router's memory chip that controls its basic networking functions and hardware initialization.
+                </div>
+                <div class="options">
+                    <div class="option" data-type="firmware">System Software<br><small>(Firmware)</small></div>
+                    <div class="option" data-type="device-driver">System Software<br><small>(Device Driver)</small></div>
+                    <div class="option" data-type="communication">Application Software<br><small>(Communication)</small></div>
+                    <div class="option" data-type="testing-debugging">Programming Software<br><small>(Testing & Debugging)</small></div>
+                </div>
+                <div class="feedback">
+                    <span class="feedback-text"></span>
+                </div>
+            </div>
+
+            <!-- Q12 -->
+            <div class="scenario" data-answer="web-browser">
+                <div class="scenario-text">
+                    <strong>Q12:</strong><br>
+                    Michael needs to access his online banking, check social media, search for information, and watch streaming videos. He requires software that can interpret HTML, display web pages, and navigate between different websites.
+                </div>
+                <div class="options">
+                    <div class="option" data-type="operating-system">System Software<br><small>(Operating System)</small></div>
+                    <div class="option" data-type="web-browser">Application Software<br><small>(Web Browser)</small></div>
+                    <div class="option" data-type="communication">Application Software<br><small>(Communication)</small></div>
+                    <div class="option" data-type="compiler">Programming Software<br><small>(Compiler/Interpreter)</small></div>
+                </div>
+                <div class="feedback">
+                    <span class="feedback-text"></span>
+                </div>
+            </div>
+
+            <!-- Q13 -->
+            <div class="scenario" data-answer="database">
+                <div class="scenario-text">
+                    <strong>Q13:</strong><br>
+                    Sophie's company stores customer information, inventory data, and sales records. She needs tools to create tables, write queries to retrieve specific information, manage user permissions, backup data, and ensure data integrity across their information system.
+                </div>
+                <div class="options">
+                    <div class="option" data-type="system-utilities">System Software<br><small>(System Utilities)</small></div>
+                    <div class="option" data-type="business">Application Software<br><small>(Business)</small></div>
+                    <div class="option" data-type="database">Programming Software<br><small>(Database Management)</small></div>
+                    <div class="option" data-type="version-control">Programming Software<br><small>(Version Control)</small></div>
+                </div>
+                <div class="feedback">
+                    <span class="feedback-text"></span>
+                </div>
+            </div>
+
+            <!-- Q14 -->
+            <div class="scenario" data-answer="educational">
+                <div class="scenario-text">
+                    <strong>Q14:</strong><br>
+                    Jake wants to learn Spanish before his trip to Mexico. He needs software that provides interactive lessons, tracks his progress, offers pronunciation practice, includes quizzes and games, and adapts to his learning pace.
+                </div>
+                <div class="options">
+                    <div class="option" data-type="system-libraries">System Software<br><small>(System Libraries)</small></div>
+                    <div class="option" data-type="educational">Application Software<br><small>(Educational)</small></div>
+                    <div class="option" data-type="entertainment">Application Software<br><small>(Entertainment)</small></div>
+                    <div class="option" data-type="code-editor">Programming Software<br><small>(Code Editor)</small></div>
+                </div>
+                <div class="feedback">
+                    <span class="feedback-text"></span>
+                </div>
+            </div>
+
+            <!-- Q15 -->
+            <div class="scenario" data-answer="compiler">
+                <div class="scenario-text">
+                    <strong>Q15:</strong><br>
+                    Ryan wrote a C++ program for his computer science class. He needs software that will read his human-readable source code, check it for syntax errors, and convert it into machine language that the computer processor can execute directly.
+                </div>
+                <div class="options">
+                    <div class="option" data-type="operating-system">System Software<br><small>(Operating System)</small></div>
+                    <div class="option" data-type="productivity">Application Software<br><small>(Productivity)</small></div>
+                    <div class="option" data-type="compiler">Programming Software<br><small>(Compiler/Interpreter)</small></div>
+                    <div class="option" data-type="ide">Programming Software<br><small>(IDE)</small></div>
+                </div>
+                <div class="feedback">
+                    <span class="feedback-text"></span>
+                </div>
+            </div>
+
+            <!-- Q16 -->
+            <div class="scenario" data-answer="entertainment">
+                <div class="scenario-text">
+                    <strong>Q16:</strong><br>
+                    Amanda wants to relax after work by playing her favorite puzzle game, streaming movies, listening to music playlists, and watching gaming livestreams from her favorite content creators.
+                </div>
+                <div class="options">
+                    <div class="option" data-type="device-driver">System Software<br><small>(Device Driver)</small></div>
+                    <div class="option" data-type="entertainment">Application Software<br><small>(Entertainment)</small></div>
+                    <div class="option" data-type="creative-multimedia">Application Software<br><small>(Creative & Multimedia)</small></div>
+                    <div class="option" data-type="build-deployment">Programming Software<br><small>(Build & Deployment)</small></div>
+                </div>
+                <div class="feedback">
+                    <span class="feedback-text"></span>
+                </div>
+            </div>
+
+            <!-- Q17 -->
+            <div class="scenario" data-answer="system-libraries">
+                <div class="scenario-text">
+                    <strong>Q17:</strong><br>
+                    Ben's gaming laptop needs to run the latest 3D games with advanced graphics. The games require specific software components that provide standardized functions for rendering graphics, handling audio, and managing input devices that any application can use.
+                </div>
+                <div class="options">
+                    <div class="option" data-type="system-libraries">System Software<br><small>(System Libraries)</small></div>
+                    <div class="option" data-type="device-driver">System Software<br><small>(Device Driver)</small></div>
+                    <div class="option" data-type="entertainment">Application Software<br><small>(Entertainment)</small></div>
+                    <div class="option" data-type="compiler">Programming Software<br><small>(Compiler/Interpreter)</small></div>
+                </div>
+                <div class="feedback">
+                    <span class="feedback-text"></span>
+                </div>
+            </div>
+
+            <!-- Q18 -->
+            <div class="scenario" data-answer="testing-debugging">
+                <div class="scenario-text">
+                    <strong>Q18:</strong><br>
+                    Kevin's mobile app keeps crashing when users try to make purchases. He needs tools to simulate user interactions, monitor app performance, identify memory leaks, set breakpoints in his code, and analyze crash reports to find and fix the problems.
+                </div>
+                <div class="options">
+                    <div class="option" data-type="system-utilities">System Software<br><small>(System Utilities)</small></div>
+                    <div class="option" data-type="business">Application Software<br><small>(Business)</small></div>
+                    <div class="option" data-type="testing-debugging">Programming Software<br><small>(Testing & Debugging)</small></div>
+                    <div class="option" data-type="ide">Programming Software<br><small>(IDE)</small></div>
+                </div>
+                <div class="feedback">
+                    <span class="feedback-text"></span>
+                </div>
+            </div>
+
+            <!-- Q19 -->
+            <div class="scenario" data-answer="productivity">
+                <div class="scenario-text">
+                    <strong>Q19:</strong><br>
+                    Linda needs to prepare a quarterly business presentation with charts and graphs, create a detailed project timeline with deadlines, and write a comprehensive report with formatted tables and references for her management team.
+                </div>
+                <div class="options">
+                    <div class="option" data-type="firmware">System Software<br><small>(Firmware)</small></div>
+                    <div class="option" data-type="productivity">Application Software<br><small>(Productivity)</small></div>
+                    <div class="option" data-type="business">Application Software<br><small>(Business)</small></div>
+                    <div class="option" data-type="database">Programming Software<br><small>(Database Management)</small></div>
+                </div>
+                <div class="feedback">
+                    <span class="feedback-text"></span>
+                </div>
+            </div>
+
+            <!-- Q20 -->
+            <div class="scenario" data-answer="build-deployment">
+                <div class="scenario-text">
+                    <strong>Q20:</strong><br>
+                    Patricia's software development team has finished coding their web application. They need tools to automatically package their code, run automated tests, create installation files, deploy the application to multiple servers, and monitor the deployment process across different environments.
+                </div>
+                <div class="options">
+                    <div class="option" data-type="operating-system">System Software<br><small>(Operating System)</small></div>
+                    <div class="option" data-type="communication">Application Software<br><small>(Communication)</small></div>
+                    <div class="option" data-type="version-control">Programming Software<br><small>(Version Control)</small></div>
+                    <div class="option" data-type="build-deployment">Programming Software<br><small>(Build & Deployment)</small></div>
                 </div>
                 <div class="feedback">
                     <span class="feedback-text"></span>
@@ -365,29 +686,93 @@
         </div>
         
         <div class="score-section">
-            <div id="score">Score: 0/8 (0%)</div>
+            <div id="score">Score: 0/20 (0%)</div>
             <button class="reset-btn" onclick="resetExercise()">🔄 Reset Exercise</button>
         </div>
     </div>
 
     <script>
         let score = 0;
-        let totalQuestions = 8;
+        let totalQuestions = 20;
         let answeredQuestions = new Set();
 
-        // Feedback messages for each scenario
+        // Enhanced feedback messages for each subcategory
         const feedbackMessages = {
-            system: {
-                correct: "✅ Correct! This is System Software because it manages hardware, provides a platform for other software, or performs system-level functions.",
-                incorrect: "❌ Incorrect. This scenario describes System Software - software that manages hardware and provides a foundation for other programs to run."
+            'operating-system': {
+                correct: "✅ Correct! Operating Systems manage hardware resources, provide user interfaces, and serve as platforms for other software to run on.",
+                incorrect: "❌ Incorrect. This scenario describes an Operating System - the fundamental system software that manages computer hardware and provides services for other programs."
             },
-            application: {
-                correct: "✅ Correct! This is Application Software because it performs specific tasks for end users and helps them accomplish their goals.",
-                incorrect: "❌ Incorrect. This scenario describes Application Software - software designed to help users perform specific tasks or activities."
+            'device-driver': {
+                correct: "✅ Correct! Device Drivers are system software that allow the operating system to communicate with specific hardware components.",
+                incorrect: "❌ Incorrect. This scenario describes a Device Driver - system software that enables communication between the OS and hardware devices."
             },
-            programming: {
-                correct: "✅ Correct! This is Programming Software because it provides tools for creating, debugging, and maintaining other software.",
-                incorrect: "❌ Incorrect. This scenario describes Programming Software - tools used by developers to create other software applications."
+            'system-utilities': {
+                correct: "✅ Correct! System Utilities are tools that help maintain, optimize, and troubleshoot the computer system.",
+                incorrect: "❌ Incorrect. This scenario describes System Utilities - software tools that help maintain and optimize system performance."
+            },
+            'firmware': {
+                correct: "✅ Correct! Firmware is low-level system software stored in hardware that controls basic device operations.",
+                incorrect: "❌ Incorrect. This scenario describes Firmware - low-level system software that controls hardware at the most basic level."
+            },
+            'system-libraries': {
+                correct: "✅ Correct! System Libraries provide essential functions and services that other software can use.",
+                incorrect: "❌ Incorrect. This scenario describes System Libraries - collections of functions that provide services to other software."
+            },
+            'productivity': {
+                correct: "✅ Correct! Productivity Software helps users create documents, presentations, spreadsheets, and manage information.",
+                incorrect: "❌ Incorrect. This scenario describes Productivity Software - applications that help users create and manage documents and information."
+            },
+            'creative-multimedia': {
+                correct: "✅ Correct! Creative & Multimedia Software is designed for creating, editing, and manipulating visual, audio, or video content.",
+                incorrect: "❌ Incorrect. This scenario describes Creative & Multimedia Software - applications for creating and editing visual, audio, or video content."
+            },
+            'communication': {
+                correct: "✅ Correct! Communication Software enables people to connect, share information, and collaborate with others.",
+                incorrect: "❌ Incorrect. This scenario describes Communication Software - applications that facilitate communication and collaboration between people."
+            },
+            'entertainment': {
+                correct: "✅ Correct! Entertainment Software provides recreational activities like games, streaming, and media consumption.",
+                incorrect: "❌ Incorrect. This scenario describes Entertainment Software - applications designed for recreation and media consumption."
+            },
+            'business': {
+                correct: "✅ Correct! Business Applications help organizations manage operations, finances, customers, and business processes.",
+                incorrect: "❌ Incorrect. This scenario describes Business Applications - software designed to help manage business operations and processes."
+            },
+            'educational': {
+                correct: "✅ Correct! Educational Software is designed to facilitate learning, training, and knowledge acquisition.",
+                incorrect: "❌ Incorrect. This scenario describes Educational Software - applications designed to support learning and education."
+            },
+            'web-browser': {
+                correct: "✅ Correct! Web Browsers are applications that allow users to access and navigate the internet.",
+                incorrect: "❌ Incorrect. This scenario describes a Web Browser - software for accessing and viewing web content on the internet."
+            },
+            'ide': {
+                correct: "✅ Correct! IDEs (Integrated Development Environments) provide comprehensive tools for software development in one interface.",
+                incorrect: "❌ Incorrect. This scenario describes an IDE - a comprehensive development environment with multiple programming tools integrated together."
+            },
+            'code-editor': {
+                correct: "✅ Correct! Code Editors are specialized text editors designed for writing and editing source code.",
+                incorrect: "❌ Incorrect. This scenario describes a Code Editor - specialized software for writing and editing program code."
+            },
+            'compiler': {
+                correct: "✅ Correct! Compilers and Interpreters translate source code into executable programs or run code directly.",
+                incorrect: "❌ Incorrect. This scenario describes Compilers/Interpreters - tools that process and execute programming code."
+            },
+            'version-control': {
+                correct: "✅ Correct! Version Control Systems help developers track changes, collaborate, and manage different versions of code.",
+                incorrect: "❌ Incorrect. This scenario describes Version Control Systems - tools for managing code changes and collaboration in software projects."
+            },
+            'database': {
+                correct: "✅ Correct! Database Management tools help create, manage, and interact with databases and data storage systems.",
+                incorrect: "❌ Incorrect. This scenario describes Database Management Software - tools for creating and managing data storage systems."
+            },
+            'testing-debugging': {
+                correct: "✅ Correct! Testing & Debugging Tools help developers find and fix errors in their software.",
+                incorrect: "❌ Incorrect. This scenario describes Testing & Debugging Tools - software used to find and fix problems in programs."
+            },
+            'build-deployment': {
+                correct: "✅ Correct! Build & Deployment Tools help package, distribute, and deploy software applications.",
+                incorrect: "❌ Incorrect. This scenario describes Build & Deployment Tools - software used to package and distribute applications."
             }
         };
 
@@ -423,7 +808,14 @@
             } else {
                 option.classList.add('incorrect');
                 feedback.className = 'feedback incorrect';
-                feedbackText.textContent = feedbackMessages[correctAnswer].incorrect;
+                
+                // Highlight the correct answer in green
+                const correctOption = scenario.querySelector(`[data-type="${correctAnswer}"]`);
+                correctOption.classList.add('correct');
+                
+                // Show correct answer and explanation
+                const correctOptionText = correctOption.textContent;
+                feedbackText.innerHTML = `❌ Incorrect. The correct answer is: <strong style="color: #155724;">✓ ${correctOptionText}</strong><br><br><span style="color: #155724;">${feedbackMessages[correctAnswer].correct.replace('✅ Correct!', '✓ Correct!')}</span>`;
                 
                 // Remove from answered questions if previously correct
                 if (answeredQuestions.has(scenario)) {
